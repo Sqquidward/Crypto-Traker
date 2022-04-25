@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register.Activity_Login"
+    android:background="@drawable/gradient_light">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/sign_style_white">
+            <ImageView
+                android:layout_marginRight="135dp"
+                android:id="@+id/logo"
+                android:layout_marginLeft="10dp"
+                android:layout_width="94dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="205dp"
+            android:layout_marginTop="250dp"
+            app:cardCornerRadius="30dp"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <EditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/Edit_Email_l"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:shadowRadius="134"
+                    android:background="@drawable/sign_style"
+                    android:hint="Login"
+                    android:paddingLeft="23dp"
+                    android:textStyle="bold">
+                </EditText>
+
+                <EditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/Edit_Password_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/sign_style"
+                    android:hint="Password"
+                    android:paddingLeft="23dp"
+                    android:shadowRadius="134"
+                    android:textStyle="bold"></EditText>
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/Btn_Login_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop='140dp'
+                    android:layout_marginRight="185dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/lato_black"
+                    android:text="Login"
+                    android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/Btn_register_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop='140dp'
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/lato_black"
+                    android:text="Register"
+                    android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
